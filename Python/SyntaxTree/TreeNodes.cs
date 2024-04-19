@@ -1034,7 +1034,7 @@ namespace Python
 
         public override string ToString()
         {
-            return $"{this.key}={this.value} {this.comprehension}";
+            return $"{this.key}:{this.value} {this.comprehension}";
         }
 
         public string ToString(int indent) => ToString();
@@ -1082,7 +1082,6 @@ namespace Python
         }
 
         public string ToString(int indent) => ToString();
-
     }
 }
 
